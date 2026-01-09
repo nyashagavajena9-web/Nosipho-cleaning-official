@@ -14,7 +14,6 @@
         body { font-family: 'Montserrat', sans-serif; scroll-behavior: smooth; }
         .brand-green { background-color: #4CAF50; }
         
-        /* HEADER - 2 COUCHES IN LOUNGE */
         .hero-bg {
             background: linear-gradient(rgba(255,255,255,0.55), rgba(255,255,255,0.55)),
             url('https://i.ibb.co/8g9Fs6rD/1767867024875.png');
@@ -25,34 +24,17 @@
         .service-card:hover { transform: translateY(-5px); transition: all 0.3s ease; }
         
         .whatsapp-float {
-            position: fixed;
-            width: 60px;
-            height: 60px;
-            bottom: 20px;
-            right: 20px;
-            background-color: #25d366;
-            color: #FFF;
-            border-radius: 50px;
-            text-align: center;
-            font-size: 30px;
-            box-shadow: 2px 2px 10px rgba(0,0,0,0.2);
-            z-index: 1000;
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            text-decoration: none;
-            transition: transform 0.3s ease;
+            position: fixed; width: 60px; height: 60px; bottom: 20px; right: 20px;
+            background-color: #25d366; color: #FFF; border-radius: 50px;
+            text-align: center; font-size: 30px; box-shadow: 2px 2px 10px rgba(0,0,0,0.2);
+            z-index: 1000; display: flex; align-items: center; justify-content: center;
+            text-decoration: none; transition: transform 0.3s ease;
         }
 
         .price-badge {
-            background-color: #4CAF50;
-            color: white;
-            padding: 4px 14px;
-            border-radius: 8px;
-            font-weight: 800;
-            font-size: 1rem;
-            display: inline-block;
-            margin-top: 10px;
+            background-color: #4CAF50; color: white; padding: 4px 14px;
+            border-radius: 8px; font-weight: 800; font-size: 1rem;
+            display: inline-block; margin-top: 10px;
         }
     </style>
 </head>
@@ -64,11 +46,11 @@
 </a>
 
 <nav class="flex justify-between items-center px-6 md:px-12 py-5 bg-white shadow-sm sticky top-0 z-50">
-    <span class="font-extrabold text-2xl uppercase tracking-tighter">Nosipho</span>
+    <span class="font-extrabold text-2xl uppercase tracking-tighter text-green-700">Nosipho</span>
     <div class="hidden md:flex gap-8 text-[10px] font-bold uppercase tracking-widest text-gray-400">
-        <a href="#services" class="hover:text-green-600 transition">Services</a>
-        <a href="#about" class="hover:text-green-600 transition">About</a>
-        <a href="https://wa.me/27614765885" class="hover:text-green-600 transition">Contact</a>
+        <a href="#services" class="hover:text-green-600">Services</a>
+        <a href="#about" class="hover:text-green-600">About Us</a>
+        <a href="https://wa.me/27614765885" class="hover:text-green-600">Contact</a>
     </div>
     <a href="https://wa.me/27614765885" class="brand-green text-white px-5 py-2 rounded font-bold text-[10px] uppercase shadow-md">
         Book Now
@@ -84,9 +66,10 @@
         <p class="text-gray-700 font-bold text-xs uppercase tracking-widest my-4 leading-loose">
             Johannesburg's Premier Home Care • Professional Reliable Staff
         </p>
-        <p class="text-green-700 font-extrabold text-sm uppercase tracking-[0.3em] mb-8">
+        <p class="text-green-700 font-extrabold text-sm uppercase tracking-[0.3em] mb-4">
             “Clean Homes. Happy Families.”
         </p>
+        <p class="text-gray-400 text-[10px] font-bold uppercase mb-8">Est. 2024</p>
         <a href="https://wa.me/27614765885" class="brand-green text-white px-10 py-4 rounded font-extrabold text-xs uppercase shadow-xl inline-block hover:brightness-110">
             Book a Clean Today
         </a>
@@ -94,11 +77,12 @@
 </header>
 
 <section id="services" class="py-16 px-6 md:px-20">
+    <h2 class="text-center font-extrabold text-3xl uppercase mb-12">Our Services</h2>
     <div class="grid grid-cols-2 lg:grid-cols-5 gap-6 max-w-7xl mx-auto">
         
         <div class="service-card bg-white p-3 rounded-xl shadow-sm border border-gray-100 text-center flex flex-col justify-between">
             <div>
-                <img src="https://i.ibb.co/fVZzq3DV/1767993495564.png" class="w-full h-32 md:h-48 object-cover rounded-lg mb-3" alt="Spring Clean">
+                <img src="https://i.ibb.co/fVZzq3DV/1767993495564.png" class="w-full h-32 md:h-48 object-cover rounded-lg mb-3">
                 <p class="font-bold text-[10px] uppercase text-gray-500">Full Spring Clean</p>
                 <p class="text-[8px] text-gray-400 uppercase font-bold mb-2">Excl. Windows & Curtains</p>
             </div>
@@ -107,29 +91,15 @@
 
         <div class="service-card bg-white p-3 rounded-xl shadow-sm border border-gray-100 text-center flex flex-col justify-between">
             <div>
-                <img src="https://images.unsplash.com/photo-1600585152220-90363fe7e115?auto=format&fit=crop&w=800&q=80" class="w-full h-32 md:h-48 object-cover rounded-lg mb-3" alt="Moving In">
+                <img src="https://images.unsplash.com/photo-1600585152220-90363fe7e115?auto=format&fit=crop&w=800&q=80" class="w-full h-32 md:h-48 object-cover rounded-lg mb-3">
                 <p class="font-bold text-[10px] uppercase text-gray-500">Moving In / Out</p>
                 <p class="text-[9px] text-gray-400 uppercase font-bold mb-2">Deep Clean</p>
             </div>
             <div class="price-badge">R1000</div>
         </div>
 
-        <div class="service-card bg-white p-3 rounded-xl shadow-sm border border-gray-100 text-center flex flex-col justify-between">
-            <div>
-                <img src="https://i.ibb.co/tTKYCbYg/1767959853094.png" class="w-full h-32 md:h-48 object-cover rounded-lg mb-3" alt="Ironing">
-                <p class="font-bold text-[10px] uppercase text-gray-500 mb-1">Ironing & Laundry</p>
-            </div>
-            <div class="price-badge">R220 <span class="text-[8px] font-normal">/ basket</span></div>
-        </div>
+        
 
-        <div class="service-card bg-white p-3 rounded-xl shadow-sm border border-gray-100 text-center flex flex-col justify-between">
-            <div>
-                <img src="https://i.ibb.co/LzZJdsRQ/1767864215192.png" class="w-full h-32 md:h-48 object-cover rounded-lg mb-3" alt="Kitchen Scrub">
-                <p class="font-bold text-[10px] uppercase text-gray-500 mb-1">Kitchen Scrubbing</p>
-                <p class="text-[8px] text-gray-400 uppercase font-bold italic">Deep Cabinet Scrub</p>
-            </div>
-            <p class="text-green-600 font-extrabold text-sm mt-3 uppercase tracking-tighter">Quote Basis</p>
-        </div>
 
 
 
