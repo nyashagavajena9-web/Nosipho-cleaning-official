@@ -16,7 +16,7 @@
         
         .hero-bg {
             background: linear-gradient(rgba(255,255,255,0.55), rgba(255,255,255,0.55)),
-            url('https://i.ibb.co/8g9Fs6rD/1767867024875.png');
+            url('https://i.ibb.co/8g9Fs6rD/1767867024875.png'); /* 2 COUCHES */
             background-size: cover;
             background-position: center;
         }
@@ -28,7 +28,7 @@
             background-color: #25d366; color: #FFF; border-radius: 50px;
             text-align: center; font-size: 30px; box-shadow: 2px 2px 10px rgba(0,0,0,0.2);
             z-index: 1000; display: flex; align-items: center; justify-content: center;
-            text-decoration: none; transition: transform 0.3s ease;
+            text-decoration: none;
         }
 
         .price-badge {
@@ -41,9 +41,7 @@
 
 <body class="bg-[#FDFDFD] text-gray-800">
 
-<a href="https://wa.me/27614765885" class="whatsapp-float" target="_blank">
-    <i class="fab fa-whatsapp"></i>
-</a>
+<a href="https://wa.me/27614765885" class="whatsapp-float" target="_blank"><i class="fab fa-whatsapp"></i></a>
 
 <nav class="flex justify-between items-center px-6 md:px-12 py-5 bg-white shadow-sm sticky top-0 z-50">
     <span class="font-extrabold text-2xl uppercase tracking-tighter text-green-700">Nosipho</span>
@@ -52,27 +50,16 @@
         <a href="#about" class="hover:text-green-600">About Us</a>
         <a href="https://wa.me/27614765885" class="hover:text-green-600">Contact</a>
     </div>
-    <a href="https://wa.me/27614765885" class="brand-green text-white px-5 py-2 rounded font-bold text-[10px] uppercase shadow-md">
-        Book Now
-    </a>
+    <a href="https://wa.me/27614765885" class="brand-green text-white px-5 py-2 rounded font-bold text-[10px] uppercase shadow-md">Book Now</a>
 </nav>
 
-<header class="hero-bg min-h-[550px] flex items-center px-6 md:px-20">
+<header class="hero-bg min-h-[500px] flex items-center px-6 md:px-20">
     <div class="max-w-3xl">
-        <h1 class="text-5xl md:text-7xl font-extrabold leading-none uppercase">
-            NOSIPHO
-            <span class="block text-green-600 text-3xl md:text-5xl mt-2 uppercase">Cleaning Service</span>
-        </h1>
-        <p class="text-gray-700 font-bold text-xs uppercase tracking-widest my-4 leading-loose">
-            Johannesburg's Premier Home Care • Professional Reliable Staff
-        </p>
-        <p class="text-green-700 font-extrabold text-sm uppercase tracking-[0.3em] mb-4">
-            “Clean Homes. Happy Families.”
-        </p>
-        <p class="text-gray-400 text-[10px] font-bold uppercase mb-8">Est. 2024</p>
-        <a href="https://wa.me/27614765885" class="brand-green text-white px-10 py-4 rounded font-extrabold text-xs uppercase shadow-xl inline-block hover:brightness-110">
-            Book a Clean Today
-        </a>
+        <h1 class="text-5xl md:text-7xl font-extrabold leading-none uppercase">NOSIPHO <span class="block text-green-600 text-3xl md:text-5xl mt-2">Cleaning Service</span></h1>
+        <p class="text-gray-700 font-bold text-xs uppercase tracking-widest my-4">Johannesburg's Premier Home Care • Professional Staff</p>
+        <p class="text-green-700 font-extrabold text-sm uppercase tracking-[0.3em] mb-4 italic">“Clean Homes. Happy Families.”</p>
+        <p class="text-gray-500 text-[10px] font-bold uppercase mb-8 italic">Established 2024</p>
+        <a href="https://wa.me/27614765885" class="brand-green text-white px-10 py-4 rounded font-extrabold text-xs uppercase shadow-xl inline-block hover:brightness-110">Book a Clean Today</a>
     </div>
 </header>
 
@@ -81,22 +68,68 @@
     <div class="grid grid-cols-2 lg:grid-cols-5 gap-6 max-w-7xl mx-auto">
         
         <div class="service-card bg-white p-3 rounded-xl shadow-sm border border-gray-100 text-center flex flex-col justify-between">
-            <div>
-                <img src="https://i.ibb.co/fVZzq3DV/1767993495564.png" class="w-full h-32 md:h-48 object-cover rounded-lg mb-3">
-                <p class="font-bold text-[10px] uppercase text-gray-500">Full Spring Clean</p>
-                <p class="text-[8px] text-gray-400 uppercase font-bold mb-2">Excl. Windows & Curtains</p>
-            </div>
+            <img src="https://i.ibb.co/fVZzq3DV/1767993495564.png" class="w-full h-32 md:h-48 object-cover rounded-lg mb-3">
+            <p class="font-bold text-[10px] uppercase text-gray-500">Full Spring Clean</p>
             <div class="price-badge">R1000</div>
         </div>
 
         <div class="service-card bg-white p-3 rounded-xl shadow-sm border border-gray-100 text-center flex flex-col justify-between">
-            <div>
-                <img src="https://images.unsplash.com/photo-1600585152220-90363fe7e115?auto=format&fit=crop&w=800&q=80" class="w-full h-32 md:h-48 object-cover rounded-lg mb-3">
-                <p class="font-bold text-[10px] uppercase text-gray-500">Moving In / Out</p>
-                <p class="text-[9px] text-gray-400 uppercase font-bold mb-2">Deep Clean</p>
-            </div>
+            <img src="https://images.unsplash.com/photo-1600585152220-90363fe7e115?auto=format&fit=crop&w=800&q=80" class="w-full h-32 md:h-48 object-cover rounded-lg mb-3">
+            <p class="font-bold text-[10px] uppercase text-gray-500">Moving In / Out</p>
             <div class="price-badge">R1000</div>
         </div>
+
+        <div class="service-card bg-white p-3 rounded-xl shadow-sm border border-gray-100 text-center flex flex-col justify-between">
+            <img src="https://i.ibb.co/tTKYCbYg/1767959853094.png" class="w-full h-32 md:h-48 object-cover rounded-lg mb-3">
+            <p class="font-bold text-[10px] uppercase text-gray-500">Ironing & Laundry</p>
+            <div class="price-badge">R220</div>
+        </div>
+
+        <div class="service-card bg-white p-3 rounded-xl shadow-sm border border-gray-100 text-center flex flex-col justify-between">
+            <img src="https://i.ibb.co/LzZJdsRQ/1767864215192.png" class="w-full h-32 md:h-48 object-cover rounded-lg mb-3">
+            <p class="font-bold text-[10px] uppercase text-gray-500">Kitchen Scrubbing</p>
+            <p class="text-green-600 font-extrabold text-sm mt-3 uppercase">Quote Basis</p>
+        </div>
+
+        <div class="service-card bg-white p-3 rounded-xl shadow-sm border border-gray-100 text-center flex flex-col justify-between">
+            <img src="https://i.ibb.co/v6108wtQ/1767959943283.png" class="w-full h-32 md:h-48 object-cover rounded-lg mb-3">
+            <p class="font-bold text-[10px] uppercase text-gray-500">Blanket Washing</p>
+            <div class="price-badge">R220</div>
+        </div>
+    </div>
+</section>
+
+<section id="about" class="py-20 bg-gray-50 px-6 md:px-20 border-t border-gray-100">
+    <div class="max-w-6xl mx-auto grid md:grid-cols-2 gap-16 items-center">
+        <div>
+            <h2 class="text-4xl font-extrabold uppercase mb-2">About <span class="text-green-600">Us</span></h2>
+            <p class="text-green-700 font-bold text-[10px] uppercase tracking-widest mb-6">“Clean Homes. Happy Families.”</p>
+            <p class="text-gray-600 text-sm leading-relaxed mb-6">Nosipho Cleaning Service was established in <strong>2024</strong> to provide Johannesburg residents with reliable, high-standard home care. We believe your home is your sanctuary.</p>
+            <p class="text-gray-600 text-sm leading-relaxed mb-8"><strong>Our Staff:</strong> Every member of our team is highly vetted, background-checked, and rigorously trained to handle your space with absolute integrity and professionalism.</p>
+            <div class="flex gap-4">
+                <a href="https://www.facebook.com" class="text-blue-600 text-2xl hover:scale-110 transition"><i class="fab fa-facebook"></i></a>
+                <a href="https://wa.me/27614765885" class="text-green-500 text-2xl hover:scale-110 transition"><i class="fab fa-whatsapp"></i></a>
+            </div>
+        </div>
+        <div class="bg-white p-10 rounded-3xl shadow-sm border border-gray-100">
+            <h4 class="font-extrabold uppercase text-[10px] tracking-widest text-center mb-6 text-green-700">Request Callback</h4>
+            <div class="space-y-4">
+                <input type="text" placeholder="Full Name" class="w-full p-4 bg-gray-50 rounded-xl text-xs outline-none">
+                <input type="tel" placeholder="Phone Number" class="w-full p-4 bg-gray-50 rounded-xl text-xs outline-none">
+                <a href="https://wa.me/27614765885" class="block w-full brand-green text-white text-center font-bold py-4 rounded-xl text-[10px] uppercase tracking-widest shadow-lg">Submit</a>
+            </div>
+        </div>
+    </div>
+</section>
+
+<footer class="py-12 bg-white text-center border-t border-gray-50">
+    <p class="text-[9px] font-bold uppercase tracking-[0.5em] text-gray-400">Nosipho Cleaning Service | 061 476 5885</p>
+    <p class="text-[8px] text-gray-300 mt-2 uppercase tracking-widest">&copy; 2024 Nosipho Cleaning • Johannesburg</p>
+</footer>
+
+</body>
+</html>
+
 
         
 
