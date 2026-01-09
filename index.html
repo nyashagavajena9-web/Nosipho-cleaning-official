@@ -1,68 +1,137 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" class="scroll-smooth">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Nosipho Home Cleaning</title>
-    <link rel="stylesheet" href="style.css">
+    <title>Nosipho Home Cleaning | Professional Services</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
 </head>
-<body>
+<body class="bg-gray-50 font-sans text-gray-800">
 
-<div class="hero">
-    <div class="hero-text">
-        <h1>Nosipho Home Cleaning</h1>
-        <p>Professional Care for a Spotless Home</p>
-        <a href="#booking" class="cta-button">Book a Service</a>
-    </div>
-</div>
+    <nav class="bg-white py-4 px-6 md:px-12 flex justify-between items-center shadow-sm sticky top-0 z-50">
+        <div class="flex items-center gap-2">
+            <div class="w-8 h-8 bg-blue-600 rounded-full flex items-center justify-center text-white font-bold">N</div>
+            <span class="font-bold text-xl tracking-tight">Nosipho Agency</span>
+        </div>
+        
+        <div class="hidden md:flex gap-8 text-sm font-semibold text-gray-600 items-center">
+            <a href="#" class="hover:text-blue-600 transition">Home</a>
+            <a href="#services" class="hover:text-blue-600 transition">Services</a>
+            <a href="#booking" class="bg-green-500 text-white px-5 py-2 rounded-lg hover:bg-green-600 transition shadow-md">Book Now</a>
+        </div>
 
-<section class="about-section">
-    <h2>About Nosipho Agency</h2>
-    <p>We provide reliable, high-quality cleaning, laundry, and ironing services in Johannesburg with a focus on trust and excellence.</p>
-</section>
+        <button id="menu-btn" class="md:hidden flex items-center text-2xl text-gray-600">
+            <i class="fas fa-bars"></i>
+        </button>
 
-<section class="gallery-grid">
-    <div class="gallery-item">
-        <img src="https://images.pexels.com/photos/4846097/pexels-photo-4846097.jpeg?auto=compress&cs=tinysrgb&w=800" alt="Lounge">
-        <div class="overlay"><h3>Lounge & Spring Clean</h3><p>Full Deep Clean: R1000</p></div>
-    </div>
-    <div class="gallery-item">
-        <img src="https://i.ibb.co/G480rHz4/1767864215192.png" alt="Kitchen Scrub">
-        <div class="overlay"><h3>Kitchen Scrub</h3><p>Hygienic & Sparkling</p></div>
-    </div>
-    <div class="gallery-item">
-        <img src="https://images.pexels.com/photos/5591460/pexels-photo-5591460.jpeg?auto=compress&cs=tinysrgb&w=800" alt="Laundry Room">
-        <div class="overlay"><h3>Laundry & Ironing</h3><p>R220 per basket</p></div>
-    </div>
-</section>
+        <div id="mobile-menu" class="hidden absolute top-full left-0 w-full bg-white shadow-lg flex-col border-t border-gray-100 animate-fade-in-down">
+            <a href="#" class="mobile-link block px-6 py-4 border-b hover:bg-gray-50">Home</a>
+            <a href="#services" class="mobile-link block px-6 py-4 border-b hover:bg-gray-50">Services</a>
+            <a href="#booking" class="mobile-link block px-6 py-4 text-green-600 font-bold hover:bg-gray-50">Book Now</a>
+        </div>
+    </nav>
 
-<section class="booking" id="booking">
-    <div class="booking-card">
-        <h2>Request a Callback</h2>
-        <form id="cleaningForm">
-            <input type="text" id="name" placeholder="Your Name" required>
-            <input type="tel" id="phone" placeholder="Phone Number" required>
-            <select id="service">
-                <option>Full Spring Clean (R1000)</option>
-                <option>Laundry & Ironing (R220)</option>
-                <option>Blanket Washing (R220)</option>
-            </select>
-            <button type="submit" class="submit-btn">Send Booking Request</button>
-        </form>
-        <p id="msg" style="display:none; color: #00c853; text-align:center; font-weight:bold;">✔ Sent! Nosipho will call you.</p>
-    </div>
-</section>
+    <header class="relative bg-white pt-10 pb-20 px-6 md:px-12 overflow-hidden">
+        <div class="max-w-7xl mx-auto flex flex-col md:flex-row items-center gap-12">
+            <div class="md:w-1/2 z-10">
+                <h1 class="text-5xl font-extrabold text-gray-900 leading-tight">NOSIPHO<br><span class="text-blue-600 font-light">Home Cleaning</span></h1>
+                <p class="mt-6 text-gray-500 text-lg max-w-md">The most trusted professional cleaning service in Johannesburg. We make your home shine so you can relax.</p>
+                <div class="mt-8 flex flex-wrap gap-4">
+                    <a href="#booking" class="bg-green-500 text-white px-8 py-4 rounded-md font-bold shadow-lg hover:bg-green-600 hover:-translate-y-1 transition-all">Get Started</a>
+                    <a href="#services" class="px-8 py-4 rounded-md font-bold border-2 border-green-500 text-green-500 hover:bg-green-500 hover:text-white transition-all">View Services</a>
+                </div>
+            </div>
+            <div class="md:w-1/2 relative">
+                <img src="https://images.pexels.com/photos/4846097/pexels-photo-4846097.jpeg?auto=compress&cs=tinysrgb&w=800" class="rounded-3xl shadow-2xl w-full object-cover h-[450px] hover:scale-[1.02] transition-transform duration-500">
+                <div class="absolute -top-4 -right-4 w-64 h-64 bg-blue-50 rounded-full -z-10"></div>
+            </div>
+        </div>
+    </header>
 
-<footer>
-    <p>Nosipho Agency | Johannesburg | 📞 +27 61 476 5885</p>
-    <a href="https://facebook.com" class="fb-btn" target="_blank">Find us on Facebook</a>
-</footer>
+    <section id="services" class="py-20 bg-gray-50 px-6">
+        <div class="max-w-7xl mx-auto">
+            <h2 class="text-3xl font-bold text-center mb-12">Our Cleaning Packages</h2>
+            <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-8">
+                
+                <div class="bg-white rounded-2xl shadow-sm border border-gray-100 overflow-hidden hover:shadow-xl transition-all duration-300">
+                    <img src="https://images.pexels.com/photos/4108715/pexels-photo-4108715.jpeg?auto=compress&cs=tinysrgb&w=400" class="w-full h-48 object-cover">
+                    <div class="p-6 text-center">
+                        <h3 class="font-bold text-lg">Full Spring Clean</h3>
+                        <p class="text-blue-600 font-extrabold mt-2 text-xl">R1000</p>
+                    </div>
+                </div>
 
-<a href="https://wa.me/27614765885" class="whatsapp-float" target="_blank">
-    <span>WhatsApp Us</span>
-</a>
+                <div class="bg-white rounded-2xl shadow-sm border border-gray-100 overflow-hidden hover:shadow-xl transition-all duration-300">
+                    <img src="https://images.pexels.com/photos/5591460/pexels-photo-5591460.jpeg?auto=compress&cs=tinysrgb&w=400" class="w-full h-48 object-cover">
+                    <div class="p-6 text-center">
+                        <h3 class="font-bold text-lg">Laundry & Ironing</h3>
+                        <p class="text-blue-600 font-extrabold mt-2 text-xl">R220 / basket</p>
+                    </div>
+                </div>
 
-<script src="script.js"></script>
+                <div class="bg-white rounded-2xl shadow-sm border border-gray-100 overflow-hidden hover:shadow-xl transition-all duration-300">
+                    <img src="https://images.pexels.com/photos/6195129/pexels-photo-6195129.jpeg?auto=compress&cs=tinysrgb&w=400" class="w-full h-48 object-cover">
+                    <div class="p-6 text-center">
+                        <h3 class="font-bold text-lg">Kitchen Deep Clean</h3>
+                        <p class="text-blue-600 font-extrabold mt-2 text-xl">R450</p>
+                    </div>
+                </div>
+
+                <div class="bg-white rounded-2xl shadow-sm border border-gray-100 overflow-hidden hover:shadow-xl transition-all duration-300">
+                    <img src="https://images.pexels.com/photos/6474471/pexels-photo-6474471.jpeg?auto=compress&cs=tinysrgb&w=400" class="w-full h-48 object-cover">
+                    <div class="p-6 text-center">
+                        <h3 class="font-bold text-lg">Blanket Washing</h3>
+                        <p class="text-blue-600 font-extrabold mt-2 text-xl">R220</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="booking" class="py-20 bg-white px-6">
+        <div class="max-w-4xl mx-auto bg-blue-600 rounded-[2rem] p-8 md:p-12 text-white shadow-2xl flex flex-col md:flex-row items-center gap-10">
+            <div class="md:w-1/2">
+                <h2 class="text-3xl font-bold mb-4">Book Your Clean Today</h2>
+                <p class="text-blue-100">Leave your details and we will call you back within 30 minutes to confirm your booking.</p>
+            </div>
+            <form class="md:w-1/2 w-full space-y-4 text-gray-900">
+                <input type="text" placeholder="Your Name" class="w-full p-4 rounded-xl focus:outline-none focus:ring-2 focus:ring-green-400 shadow-lg">
+                <input type="tel" placeholder="Phone Number" class="w-full p-4 rounded-xl focus:outline-none focus:ring-2 focus:ring-green-400 shadow-lg">
+                <button type="submit" class="w-full bg-green-500 text-white font-bold py-4 rounded-xl shadow-lg hover:bg-green-600 transition-all uppercase tracking-widest">Request Callback</button>
+            </form>
+        </div>
+    </section>
+
+    <footer class="bg-gray-900 text-white py-12 px-6 text-center">
+        <p class="font-bold text-xl mb-4">Nosipho Cleaning Agency</p>
+        <a href="https://wa.me/27614765885" class="inline-flex items-center gap-2 bg-green-500 px-8 py-3 rounded-full font-bold hover:bg-green-600 transition shadow-lg">
+            <i class="fab fa-whatsapp text-2xl"></i> Chat on WhatsApp
+        </a>
+        <p class="text-gray-500 mt-10 text-sm">© 2026 Nosipho Cleaning. Serving Johannesburg with pride.</p>
+    </footer>
+
+    <script>
+        const menuBtn = document.getElementById('menu-btn');
+        const mobileMenu = document.getElementById('mobile-menu');
+        const mobileLinks = document.querySelectorAll('.mobile-link');
+
+        // Toggle Menu
+        menuBtn.addEventListener('click', () => {
+            mobileMenu.classList.toggle('hidden');
+            mobileMenu.classList.toggle('flex');
+        });
+
+        // Close menu when a link is clicked
+        mobileLinks.forEach(link => {
+            link.addEventListener('click', () => {
+                mobileMenu.classList.add('hidden');
+                mobileMenu.classList.remove('flex');
+            });
+        });
+    </script>
+
 </body>
 </html>
+
 
